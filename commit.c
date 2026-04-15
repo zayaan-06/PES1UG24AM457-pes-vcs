@@ -145,7 +145,7 @@ int commit_create(const char *message, ObjectID *commit_id_out) {
     memset(&c, 0, sizeof(Commit));
 
     if (tree_from_index(&c.tree) != 0) return -1;
-
+//chacking for parent 
     if (head_read(&c.parent) == 0) {
         c.has_parent = 1;
     } else {
@@ -156,7 +156,7 @@ int commit_create(const char *message, ObjectID *commit_id_out) {
     strncpy(c.author, author_str ? author_str : "User", sizeof(c.author) - 1);
     c.timestamp = (uint64_t)time(NULL);
     if (message) strncpy(c.message, message, sizeof(c.message) - 1);
-
+//serialization
     void *data = NULL;
     size_t len = 0;
     if (commit_serialize(&c, &data, &len) != 0) return -1;
