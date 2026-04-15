@@ -1,3 +1,4 @@
+//staginng
 #include "index.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +15,7 @@
 
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
 
-// ─── RESTORED PROVIDED FUNCTIONS ───────────────────────────────────────────
+
 
 IndexEntry* index_find(Index *index, const char *path) {
     for (int i = 0; i < index->count; i++) {
@@ -40,7 +41,7 @@ int index_remove(Index *index, const char *path) {
     return -1;
 }
 
-// ─── YOUR IMPLEMENTED FUNCTIONS ───────────────────────────────────────────
+
 
 int index_load(Index *index) {
     index->count = 0;
