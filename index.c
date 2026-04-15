@@ -42,7 +42,7 @@ int index_remove(Index *index, const char *path) {
 }
 
 
-
+//opening file objact
 int index_load(Index *index) {
     index->count = 0;
     FILE *f = fopen(INDEX_PATH, "r");
