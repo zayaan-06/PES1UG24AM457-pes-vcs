@@ -6,7 +6,7 @@
 #include <sys/stat.h>
 
 
-//write decalaration 
+//write declaration 
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
 
 // ─── Constants ───────────────────────────────────────────────────────────────
