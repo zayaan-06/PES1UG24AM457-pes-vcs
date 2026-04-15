@@ -25,6 +25,7 @@ uint32_t get_file_mode(const char *path) {
     return MODE_FILE;
 }
 
+//parsing the tree
 int tree_parse(const void *data, size_t len, Tree *tree_out) {
     tree_out->count = 0;
     const uint8_t *ptr = (const uint8_t *)data;
