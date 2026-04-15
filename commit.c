@@ -1,4 +1,4 @@
-//importing headers 
+//commit code 
 #include "commit.h"
 #include "index.h"
 #include "tree.h"
