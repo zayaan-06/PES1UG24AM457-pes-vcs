@@ -169,7 +169,7 @@ static int write_tree_recursive(IndexEntry **entries, int count, int depth, Obje
     return ret;
 }
 
-// Helper for qsort in tree_from_index
+// Helper for qsort 
 static int compare_index_pointers(const void *a, const void *b) {
     return strcmp((*(IndexEntry **)a)->path, (*(IndexEntry **)b)->path);
 }
