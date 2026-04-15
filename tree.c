@@ -5,11 +5,8 @@
 #include <string.h>
 #include <sys/stat.h>
 
-// ─── External Prototypes (Fixes Implicit Declaration) ───────────────────────
 
-/**
- * Declared here since it is missing from pes.h but implemented in object.c
- */
+
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
 
 // ─── Constants ───────────────────────────────────────────────────────────────
